@@ -8,7 +8,7 @@ const Card = ({curMovie}) => {
         <li className="hero-container">
         <div className="main-container">
           <div className="poster-container">
-            <img src={Poster !== "N/A" ? Poster : "./public/image1.jpg"} className="poster" alt={imdbID} style={{ width: "125px", height: "auto", objectFit: "cover" }} />
+            <img src={Poster !== "N/A" ? Poster : "./public/image1.jpg"} className="poster" alt={imdbID} style={{ width: "125px", height: "100%", objectFit: "cover" }} />
           </div>
           <div className="ticket-container">
             <div className="ticket__content">
