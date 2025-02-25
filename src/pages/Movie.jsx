@@ -10,7 +10,7 @@ const Movie = () => {
 // console.log(moviesData);
 
 function searchMoviehandler(){
-  setMovieName(event.target.value);
+  setMovieName(event.target.value); 
   console.log(movieName)
 }
 
@@ -36,7 +36,7 @@ useEffect(() => {
         style={{width:"60%", margin: "2rem", borderRadius: "10px"}}
         />
     </div>
-    <ul className=" grid grid-four--cols">
+    <ul className=" grid grid-four--cols movie-grid">
     {moviesData.Search.map((curMovie) => {
       return <Card key={curMovie.imdbID} curMovie = {curMovie}/>;
     })}

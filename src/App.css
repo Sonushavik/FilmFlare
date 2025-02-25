@@ -681,7 +681,11 @@ ul li {
 }
 @media (width <= 1100px) {
   .grid-four--cols {
-    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 2r));
+  }
+
+  .movie-grid{
+    grid-template-columns: auto auto auto;
   }
   /* .custom-shape-divider-bottom-1696038172 svg {
     position: relative;
@@ -768,6 +772,10 @@ ul li {
 
   .section-hero .hero-heading{
     font-size: 2.5rem;
+  }
+
+  .movie-grid{
+    grid-template-columns: auto auto ;
   }
 
   .section-hero .hero-btn{

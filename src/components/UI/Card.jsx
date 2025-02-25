@@ -5,19 +5,17 @@ const Card = ({curMovie}) => {
         const { Poster, imdbID } = curMovie;
         // console.log(curMovie);
   return (
-        <li className="hero-container">
-        <div className="main-container">
-          <div className="poster-container">
-            <img src={Poster !== "N/A" ? Poster : "./public/image1.jpg"} className="poster" alt={imdbID} style={{ width: "125px", height: "100%", objectFit: "cover" }} />
+        <li >
+        <div className="card">
+          <div className="card-img">
+            <img src={Poster !== "N/A" ? Poster : "./public/image1.jpg"} className="poster" alt={imdbID} />
           </div>
-          <div className="ticket-container">
             <div className="ticket__content">
               <NavLink to={`/movie/${imdbID}`}>
                 <button className="ticket__buy-btn">Watch now</button> 
               </NavLink>
             </div>
           </div>
-        </div>
       </li>
   )
 }
