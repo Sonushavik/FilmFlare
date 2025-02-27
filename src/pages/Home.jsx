@@ -1,6 +1,5 @@
 import React from 'react'
 import { NavLink } from 'react-router'
-import Movie from './Movie'
  
 const Home = () => {
   return (
@@ -34,7 +33,6 @@ const Home = () => {
         </div>
       </div>
     </section>
-    <Movie/>
   </main>
   )
 }
