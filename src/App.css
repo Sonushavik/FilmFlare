@@ -685,6 +685,7 @@ ul li {
   }
 
   .movie-grid{
+    margin-top: 1rem;
     grid-template-columns: auto auto auto;
   }
   /* .custom-shape-divider-bottom-1696038172 svg {
